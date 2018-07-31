@@ -1,10 +1,6 @@
-class GenresController < ApplicationController
+class Admin::GenresController < Admin::BaseController
 
-  def index
-    @genres = Genre.all
-  end
-
-  def create
+    def create
     @genre = Genre.create(genre_params)
     if @genre.save
       redirect_to genres_path
@@ -19,4 +15,5 @@ class GenresController < ApplicationController
   def genre_params
     params.require(:genre).permit(:name)
   end
+
 end

@@ -20,9 +20,9 @@ describe "Admin" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
 
       visit genres_path
-
+save_and_open_page
       fill_in :genre_name,	with: "Jazz" 
-      click_on :submit
+      click_on "Save Genre"
 
       expect(current_path).to eq(genres_path)
       expect(page).to have_content(genre1.name)
