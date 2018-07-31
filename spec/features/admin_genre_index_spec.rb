@@ -29,6 +29,21 @@ describe "Admin" do
       expect(page).to have_content(genre2.name)
       expect(page).to have_content("Jazz")
     end
+
+    it 'displays flash message when genre fails to create' do
+      genre1 = Genre.create(name: "rock")
+      genre2 = Genre.create(name: "roll")
+      admin = User.create(username: 'bob', password: 'dave', role: 1)
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
+
+      visit genres_path
+
+      click_on "Save Genre"
+
+      expect(page).to have_content('Genre cannot be created, please make sure to fill the form correctly') 
+      expect(current_path).to eq(genres_path)
+
+    end
   end
 end
 
