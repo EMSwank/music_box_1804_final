@@ -6,9 +6,9 @@ describe "A visitor" do
       artist = Artist.create(name: 'Prince')
       song = artist.songs.create(title: 'song1', length: 100, play_count: 10, rating: 4)
 
-      visit song_path(song)
+      visit song_path(song.slug)
 
-      expect(page).to have_content(song.rating) 
+      expect(page).to have_content("Song rating: #{song.rating}") 
     end
   end
 end
