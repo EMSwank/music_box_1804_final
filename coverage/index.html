@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-31T10:13:49-06:00">2018-07-31T10:13:49-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-31T10:23:29-06:00">2018-07-31T10:23:29-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.69%</span></span>
+    (<span class="covered_percent"><span class="green">98.72%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.52
+         1.53
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>49</b> files in total.
-    <b>382</b> relevant lines. 
-    <span class="green"><b>377</b> lines covered</span> and
+    <b>391</b> relevant lines. 
+    <span class="green"><b>386</b> lines covered</span> and
     <span class="red"><b>5</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -77,7 +77,7 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>6.2</td>
+        <td>6.5</td>
       </tr>
       
       <tr>
@@ -102,10 +102,10 @@
       
       <tr>
         <td class="strong"><a href="#6dd164f230a0d90dd7ad8818c79186eb43a461cf" class="src_link" title="app/controllers/genres_controller.rb">app/controllers/genres_controller.rb</a></td>
-        <td class="yellow strong">83.33 %</td>
-        <td>22</td>
+        <td class="yellow strong">85.71 %</td>
+        <td>26</td>
+        <td>14</td>
         <td>12</td>
-        <td>10</td>
         <td>2</td>
         <td>1.1</td>
       </tr>
@@ -187,7 +187,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>10.8</td>
+        <td>11.2</td>
       </tr>
       
       <tr>
@@ -463,9 +463,9 @@
       <tr>
         <td class="strong"><a href="#eda9515ea9993221ea5446be0166863e90564040" class="src_link" title="spec/features/visitor_genre_index_page_spec.rb">spec/features/visitor_genre_index_page_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>26</td>
-        <td>9</td>
-        <td>9</td>
+        <td>51</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -740,8 +740,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="9">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="10" data-linenumber="9">
+          <span class="hits">10</span>
           
           <code class="ruby">    if session[:user_id]</code>
         </li>
@@ -776,8 +776,8 @@
           <code class="ruby">  def current_admin?</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="15">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="15">
+          <span class="hits">7</span>
           
           <code class="ruby">    current_user &amp;&amp; current_user.admin?</code>
         </li>
@@ -800,8 +800,8 @@
           <code class="ruby">  def build_cart</code>
         </li>
       
-        <li class="covered" data-hits="43" data-linenumber="19">
-          <span class="hits">43</span>
+        <li class="covered" data-hits="45" data-linenumber="19">
+          <span class="hits">45</span>
           
           <code class="ruby">    @cart = Cart.new(session[:cart])</code>
         </li>
@@ -1110,10 +1110,10 @@
         <div class="source_table" id="6dd164f230a0d90dd7ad8818c79186eb43a461cf">
   <div class="header">
     <h3>app/controllers/genres_controller.rb</h3>
-    <h4><span class="yellow">83.33 %</span> covered</h4>
+    <h4><span class="yellow">85.71 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>14</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
@@ -1139,8 +1139,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="4">
+          <span class="hits">5</span>
           
           <code class="ruby">    @genres = Genre.all</code>
         </li>
@@ -1160,94 +1160,118 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create</code>
+          <code class="ruby">  def show</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
+          <code class="ruby">    @genre = Genre.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
           <code class="ruby">    @genre = Genre.create(genre_params)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">    if @genre.save</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">      redirect_to genres_path</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
+        <li class="missed" data-hits="0" data-linenumber="16">
           
           
           <code class="ruby">      flash[:notice] = &#39;Item cannot be created, please make sure to fill the form correctly&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="missed" data-hits="0" data-linenumber="17">
           
           
           <code class="ruby">      redirect_to genre_path(@genre)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
           <code class="ruby">  def genre_params</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
           <code class="ruby">    params.require(:genre).permit(:name)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">end</code>
@@ -1993,8 +2017,8 @@
           <code class="ruby">  def initialize(initial_content)</code>
         </li>
       
-        <li class="covered" data-hits="48" data-linenumber="5">
-          <span class="hits">48</span>
+        <li class="covered" data-hits="50" data-linenumber="5">
+          <span class="hits">50</span>
           
           <code class="ruby">    @contents = initial_content || Hash.new(0)</code>
         </li>
@@ -2017,8 +2041,8 @@
           <code class="ruby">  def total_count</code>
         </li>
       
-        <li class="covered" data-hits="34" data-linenumber="9">
-          <span class="hits">34</span>
+        <li class="covered" data-hits="36" data-linenumber="9">
+          <span class="hits">36</span>
           
           <code class="ruby">    @contents.values.sum</code>
         </li>
@@ -3694,7 +3718,7 @@
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">  resources :genres, only: [:index, :create]</code>
+          <code class="ruby">  resources :genres, only: [:index, :create, :show]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
@@ -5288,8 +5312,8 @@
     <h3>spec/features/visitor_genre_index_page_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5360,13 +5384,13 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(genre1.name) </code>
+          <code class="ruby">      expect(page).to have_link(genre1.name) </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(genre2.name) </code>
+          <code class="ruby">      expect(page).to have_link(genre2.name) </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -5378,76 +5402,226 @@
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
+          <code class="ruby">    it &#39;cannot see the form to create new genres&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
-          <code class="ruby">=begin</code>
+          <code class="ruby">      genre1 = Genre.create(name: &quot;rock&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      genre2 = Genre.create(name: &quot;roll&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">User Story 2:</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      visit genres_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">As a Visitor,</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  When I visit the genre index page,</code>
+          <code class="ruby">      expect(page).to_not have_css(&quot;form&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">    I see all genres in the database.</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      click_on genre1.name</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(current_path).to eq(genre_path(genre1))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">=begin</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">User Story 2:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">As a Visitor,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  When I visit the genre index page,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">    I see all genres in the database.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
           <code class="ruby">Testing requirements:</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">- users should see at least 2 genres listed on the page</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">User Story 5:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">As a Visitor,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  When I visit the genre index page,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">    I cannot see the form to create new genres, </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">      And I do not have access to any routes that could create a genre.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    And each genre&#39;s name should be a link to that genre&#39;s show page.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">Testing requirements:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">- I should see at least 2 genres listed</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">- All users of the web site see the genres&#39; names as links</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">=end</code>
