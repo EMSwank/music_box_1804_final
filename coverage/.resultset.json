@@ -525,12 +525,12 @@
         1,
         1,
         1,
-        0,
+        1,
         null,
-        0,
+        1,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         null,
@@ -629,11 +629,11 @@
         1,
         null,
         1,
-        50,
+        51,
         null,
         null,
         1,
-        36,
+        37,
         null,
         null,
         1,
@@ -652,6 +652,9 @@
       "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/models/genre.rb": [
         1,
         1,
+        null,
+        1,
+        1,
         null
       ],
       "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/spec/models/playlist_spec.rb": [
@@ -664,6 +667,19 @@
         null
       ],
       "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/models/playlist.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/spec/models/song_genre_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/models/song_genre.rb": [
         1,
         1,
         1,
@@ -690,6 +706,8 @@
         1,
         1,
         1,
+        1,
+        1,
         null,
         1,
         null,
@@ -699,7 +717,7 @@
         null,
         null,
         1,
-        9,
+        11,
         null,
         null
       ],
@@ -787,7 +805,7 @@
         null,
         null,
         1,
-        45,
+        46,
         null,
         null
       ],
@@ -824,34 +842,6 @@
         null,
         null
       ],
-      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/genres_controller.rb": [
-        1,
-        null,
-        1,
-        5,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/carts_controller.rb": [
         1,
         1,
@@ -869,10 +859,32 @@
         null,
         null
       ],
-      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/models/playlist_song.rb": [
+      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/genres_controller.rb": [
+        1,
+        null,
+        1,
+        5,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
         1,
         1,
         1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/welcome_controller.rb": [
@@ -911,6 +923,30 @@
         null,
         null
       ],
+      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/admin/categories_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/admin/base_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/models/playlist_song.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/sessions_controller.rb": [
         1,
         1,
@@ -933,26 +969,8 @@
         1,
         null,
         null
-      ],
-      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/admin/categories_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/eliotswank/turing/mod2-redux/final/music_box_1804_final/app/controllers/admin/base_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        2,
-        null,
-        null
       ]
     },
-    "timestamp": 1533054496
+    "timestamp": 1533054982
   }
 }

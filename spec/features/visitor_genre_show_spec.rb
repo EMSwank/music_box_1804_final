@@ -5,13 +5,13 @@ describe "Visitor" do
     it "sees all songs associated with that genre" do
       genre = Genre.create(name: 'pop')
       artist = Artist.create(name: 'Prince')
-      song1 = genre.songs.create(title: 'song1', length: 100, play_count: 10, rating: 4)
-      song2 = genre.songs.create(title: 'song2', length: 200, play_count: 50, rating: 3)
+      song1 = genre.songs.create(title: 'song1', length: 100, play_count: 10, rating: 4, artist_id: artist.id)
+      song2 = genre.songs.create(title: 'song2', length: 200, play_count: 50, rating: 3, artist_id: artist.id)
 
       visit genre_path(genre)
 
-      expect(page).to have_content(song1.name) 
-      expect(page).to have_content(song2.name) 
+      expect(page).to have_content(song1.title) 
+      expect(page).to have_content(song2.title) 
     end
   end
 end
