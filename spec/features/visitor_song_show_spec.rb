@@ -7,12 +7,14 @@ describe "Visitor" do
       song = artist.songs.create(title: 'song1', length: 100, play_count: 10, rating: 4, artist_id: artist.id)
       genre1 = song.genres.create(name: 'pop')
       genre2 = song.genres.create(name: 'dance')
+      genre3 = Genre.create(name: 'blues')
 
       visit song_path(song)
-      
+
       expect(page).to have_content("Genres for this Song:") 
       expect(page).to have_content(genre1.name) 
       expect(page).to have_content(genre2.name) 
+      expect(page).to_not have_content(genre3.name) 
     end
   end
 end
