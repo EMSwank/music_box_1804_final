@@ -7,11 +7,7 @@ class GenresController < ApplicationController
 
   def show
     @genre = Genre.find(params[:id])
+    @average_rating = @genre.songs.average_rating
   end
 
-  private
-
-  def genre_params
-    params.require(:genre).permit(:name)
-  end
 end

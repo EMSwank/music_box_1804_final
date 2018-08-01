@@ -39,8 +39,8 @@ describe "Admin" do
       visit genres_path
 
       click_on "Create Genre"
-save_and_open_page
-      expect(page).to have_content('Item cannot be created, please make sure to fill the form correctly') 
+
+      expect(page).to have_content('Genre cannot be created, please make sure to fill the form correctly') 
       expect(current_path).to eq(genres_path)
 
     end

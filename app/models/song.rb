@@ -16,4 +16,9 @@ class Song < ApplicationRecord
   def generate_slug
     self.slug = title.parameterize
   end
+
+  def self.average_rating
+    average(:rating)
+  end
+
 end

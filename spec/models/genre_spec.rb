@@ -5,3 +5,4 @@ RSpec.describe Genre, type: :model do
   it { should have_many(:song_genres) } 
   it { should have_many(:songs).through(:song_genres) } 
 end
+
