@@ -21,8 +21,8 @@ describe "Admin" do
 
       visit genres_path
 
-      fill_in :genre_name,	with: "Jazz" 
-      click_on "Save Genre"
+      fill_in :genre_name,	with: "Jazz"
+      click_on "Create Genre"
 
       expect(current_path).to eq(genres_path)
       expect(page).to have_content(genre1.name)
@@ -38,9 +38,9 @@ describe "Admin" do
 
       visit genres_path
 
-      click_on "Save Genre"
-
-      expect(page).to have_content('Genre cannot be created, please make sure to fill the form correctly') 
+      click_on "Create Genre"
+save_and_open_page
+      expect(page).to have_content('Item cannot be created, please make sure to fill the form correctly') 
       expect(current_path).to eq(genres_path)
 
     end

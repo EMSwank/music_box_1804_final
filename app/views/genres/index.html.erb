@@ -5,9 +5,9 @@
       <% if current_admin? %>
         <div class="form"></div>
         Create new genre:
-        <%= form_for :genre do |f| %>
+        <%= form_for [:admin, @genre] do |f| %>
           <%= f.label :name %>
-            <%= f.text_field :name %>
-              <%= f.submit %>
-                <% end %>
-                  <% end %>
+          <%= f.text_field :name %>
+          <%= f.submit %>
+        <% end %>
+      <% end %>
